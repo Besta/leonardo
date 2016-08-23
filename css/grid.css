@@ -1,0 +1,334 @@
+/* line 4, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+.ip-row {
+  position: relative;
+  max-width: 100%; }
+  /* line 7, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row:after {
+    content: '';
+    display: table;
+    clear: both; }
+  /* line 12, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    position: relative; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-1 {
+      width: 8.33333%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-2 {
+      width: 16.66667%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-3 {
+      width: 25%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-4 {
+      width: 33.33333%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-5 {
+      width: 41.66667%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-6 {
+      width: 50%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-7 {
+      width: 58.33333%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-8 {
+      width: 66.66667%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-9 {
+      width: 75%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-10 {
+      width: 83.33333%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-11 {
+      width: 91.66667%; }
+    /* line 17, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row .ip-col.ip-col-12 {
+      width: 100%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-1 {
+    width: 6.73333%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-1:first-child {
+      margin-left: 0;
+      width: 7.53333%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-1:last-child {
+      margin-right: 0;
+      width: 7.53333%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-2 {
+    width: 15.06667%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-2:first-child {
+      margin-left: 0;
+      width: 15.86667%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-2:last-child {
+      margin-right: 0;
+      width: 15.86667%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-3 {
+    width: 23.4%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-3:first-child {
+      margin-left: 0;
+      width: 24.2%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-3:last-child {
+      margin-right: 0;
+      width: 24.2%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-4 {
+    width: 31.73333%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-4:first-child {
+      margin-left: 0;
+      width: 32.53333%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-4:last-child {
+      margin-right: 0;
+      width: 32.53333%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-5 {
+    width: 40.06667%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-5:first-child {
+      margin-left: 0;
+      width: 40.86667%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-5:last-child {
+      margin-right: 0;
+      width: 40.86667%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-6 {
+    width: 48.4%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-6:first-child {
+      margin-left: 0;
+      width: 49.2%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-6:last-child {
+      margin-right: 0;
+      width: 49.2%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-7 {
+    width: 56.73333%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-7:first-child {
+      margin-left: 0;
+      width: 57.53333%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-7:last-child {
+      margin-right: 0;
+      width: 57.53333%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-8 {
+    width: 65.06667%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-8:first-child {
+      margin-left: 0;
+      width: 65.86667%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-8:last-child {
+      margin-right: 0;
+      width: 65.86667%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-9 {
+    width: 73.4%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-9:first-child {
+      margin-left: 0;
+      width: 74.2%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-9:last-child {
+      margin-right: 0;
+      width: 74.2%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-10 {
+    width: 81.73333%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-10:first-child {
+      margin-left: 0;
+      width: 82.53333%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-10:last-child {
+      margin-right: 0;
+      width: 82.53333%; }
+  /* line 31, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-11 {
+    width: 90.06667%;
+    margin-right: 0.8%;
+    margin-left: 0.8%; }
+    /* line 36, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-11:first-child {
+      margin-left: 0;
+      width: 90.86667%; }
+    /* line 40, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-11:last-child {
+      margin-right: 0;
+      width: 90.86667%; }
+  /* line 26, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-12 {
+    width: 100%;
+    margin: 0; }
+
+@media screen and (max-width: 736px) {
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-1 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-2 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-3 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-4 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-5 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-6 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-7 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-8 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-9 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-10 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-11 {
+    width: 100%; }
+  /* line 54, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row .ip-col.ip-col-12 {
+    width: 100%; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-1 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-1:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-1:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-2 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-2:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-2:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-3 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-3:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-3:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-4 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-4:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-4:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-5 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-5:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-5:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-6 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-6:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-6:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-7 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-7:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-7:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-8 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-8:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-8:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-9 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-9:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-9:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-10 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-10:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-10:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-11 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-11:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-11:last-child {
+      width: 100%;
+      margin: 0; }
+  /* line 62, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+  .ip-row.ip-row--gutters .ip-col.ip-col-12 {
+    width: 100%;
+    margin: 0; }
+    /* line 66, C:/Users/Simone/Desktop/Leonario/css/grid.scss */
+    .ip-row.ip-row--gutters .ip-col.ip-col-12:first-child, .ip-row.ip-row--gutters .ip-col.ip-col-12:last-child {
+      width: 100%;
+      margin: 0; } }
+
+/*# sourceMappingURL=grid.css.map */

@@ -1,0 +1,75 @@
+$numCol: 12;
+$margin: 0.8;
+
+.ip-row {
+  position: relative;
+  max-width: 100%;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .ip-col {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+      position: relative;
+    @for $i from 1 through $numCol {
+      &.ip-col-#{$i} {
+        width: 0%+(100%/$numCol)*$i;
+      }
+    }
+  }
+  &.ip-row--gutters {
+    .ip-col {
+        @for $i from 1 through $numCol {
+            @if($i == $numCol){
+                &.ip-col-#{$i} {
+                    width: 100%;
+                    margin: 0;
+                }
+            } @else {
+                &.ip-col-#{$i} {
+                    width: (100%/$numCol * $i)-($margin*2);
+                    margin-right: 0%+$margin;
+                    margin-left: 0%+$margin;
+                    &:first-child {
+                        margin-left: 0;
+                        width: (100%/$numCol * $i)-$margin;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                        width: (100%/$numCol * $i)-$margin;
+                    }
+                }
+          }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .ip-row {
+    .ip-col {
+       @for $i from 1 through $numCol {
+         &.ip-col-#{$i} {
+           width: 100%;
+         }
+      }
+    }
+    &.ip-row--gutters {
+      .ip-col {
+        @for $i from 1 through $numCol {
+          &.ip-col-#{$i} {
+            width: 100%;
+            margin: 0;
+            &:first-child, &:last-child {
+              width: 100%;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
