@@ -10,8 +10,13 @@ $ip-color2: #607D8B;
 
 //orange
 $ip-color3: #FF9800;
+$ip-color3--dark: #E65100;
 
-h1, h2, h3 {
+
+//breakpoint da tenere allineati con le variabili js
+$mobile: 736px;
+
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
     font-weight: normal;
@@ -21,11 +26,8 @@ body {
     background: $ip-color1--dark;
     margin: 0;
     font-size: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    
-    
-    
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;    
 }
 .ip {
     &-background {
@@ -33,6 +35,7 @@ body {
         height: 100%;
         width: 100%;
         top: 0;
+        left: 0;
         position: fixed;
         background-size: cover;
         background-position: center top;
@@ -62,6 +65,7 @@ body {
         width: 100%;
         box-sizing: border-box;
         z-index: 1;
+        transition: 0.3s all;
         &__link {
             font-size: 15px;
             color: $ip-white;
@@ -80,6 +84,12 @@ body {
                     height: 2px;
                 }
             }
+        }
+        &.jscss-active {
+            background: $ip-color1;
+            box-shadow: 1px -2px 10px $ip-color3--dark;
+            width: 400px;
+            left: calc(50% - 200px);
         }
     }
     &-container {
@@ -123,9 +133,6 @@ body {
             border-radius: 3px;
             box-shadow: 0 2px 2px 0 rgba(1,1,1,.14),0 3px 1px -2px rgba(1,1,1,.2),0 1px 5px 0 rgba(1,1,1,.12);
             margin-bottom: 30px;
-            &--padding20 {
-                padding: 20px 40px;
-            }
         }
     }
     &-profile {
@@ -146,6 +153,9 @@ body {
             font-weight: 300;
             padding-bottom: 20px;
             border-bottom: 1px solid rgba($ip-white, 0.2);
+        }
+        &__infoRow {
+            margin: 20px 0;
         }
         &__question {
             color: $ip-color3;
@@ -189,5 +199,15 @@ body {
             width: 100%;
             height: 100%;
         }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .ip-container {
+        padding: 70px 0;
+        text-align: center;
+    }
+    .ip-photos__img {
+        
     }
 }

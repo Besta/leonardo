@@ -17,7 +17,7 @@
     </head>
     <body>
         <div class="ip-background"></div>
-        <nav class="ip-nav">
+        <nav class="ip-nav js-nav">
             <a href="javascript:void(0)" class="ip-nav__link ip-nav__link--active">About</a>
             <a href="javascript:void(0)" class="ip-nav__link">Photo</a>
             <a href="javascript:void(0)" class="ip-nav__link">Portfolio</a>
@@ -36,19 +36,43 @@
                                 <div class="ip-col ip-col-7">
                                     <h1 class="ip-profile__title">Leonardo Ferrari</h1>
                                     <h2 class="ip-profile__subtitle">Attore di teatro e cinema nonch&eacute; best rog ita</h2>
-                                    <div class="ip-row ip-profile__info">
+                                    <div class="ip-row ip-profile__infoRow">
                                         <div class="ip-col ip-col-3 ip-profile__question">
                                             <p>Age</p>
-                                            <p>Nationality</p>
-                                            <p>Home Town</p>
-                                            <p>Languages</p>
-                                            <p>Contact</p>
                                         </div>
                                         <div class="ip-col ip-col-9 ip-profile__answer">
                                             <p>23</p>
+                                        </div>
+                                    </div>
+                                    <div class="ip-row ip-profile__infoRow">
+                                        <div class="ip-col ip-col-3 ip-profile__question">
+                                            <p>Nationality</p>
+                                        </div>
+                                        <div class="ip-col ip-col-9 ip-profile__answer">
                                             <p>Italian</p>
+                                        </div>
+                                    </div>
+                                    <div class="ip-row ip-profile__infoRow">
+                                        <div class="ip-col ip-col-3 ip-profile__question">
+                                            <p>Home Town</p>
+                                        </div>
+                                        <div class="ip-col ip-col-9 ip-profile__answer">
                                             <p>Milan</p>
+                                        </div>
+                                    </div>
+                                    <div class="ip-row ip-profile__infoRow">
+                                        <div class="ip-col ip-col-3 ip-profile__question">
+                                            <p>Languages</p>
+                                        </div>
+                                        <div class="ip-col ip-col-9 ip-profile__answer">
                                             <p>Italian, English</p>
+                                        </div>
+                                    </div>
+                                    <div class="ip-row ip-profile__infoRow">
+                                        <div class="ip-col ip-col-3 ip-profile__question">
+                                            <p>Contact</p>
+                                        </div>
+                                        <div class="ip-col ip-col-9 ip-profile__answer">
                                             <p>leonario@gmail.com</p>
                                         </div>
                                     </div>
@@ -60,10 +84,10 @@
             </div>
             <div class="ip-row ip-row--gutters">
                 <div class="ip-col ip-col-6">
-                    <div class="ip-container__card ip-container__card--padding20">
+                    <div class="ip-container__card">
                         <h3 class="ip-section__title">Photos</h3>
                         <div id="lightgallery" class="ip-photos">
-                            <div class="ip-row ip-row--gutters ip-photos__row">
+                            <div class="ip-row ip-row--gutters ip-block-mobile ip-photos__row">
                                 <div class="ip-col ip-col-4">
                                     <a href="img/leonardo1.jpg" class="ip-photos__photo js-photo">
                                         <img class="ip-photos__img" src="img/leonardo1.jpg" />
@@ -80,7 +104,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="ip-row ip-row--gutters ip-photos__row">
+                            <div class="ip-row ip-row--gutters ip-block-mobile ip-photos__row">
                                 <div class="ip-col ip-col-4">
                                     <a href="img/leonardo4.jpg" class="ip-photos__photo js-photo">
                                         <img class="ip-photos__img" src="img/leonardo4.jpg" />
