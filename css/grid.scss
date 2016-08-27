@@ -1,4 +1,4 @@
-$numCol: 12;
+$numCol: 24;
 $margin: 0.8;
 
 .ip-row {
@@ -13,7 +13,8 @@ $margin: 0.8;
     box-sizing: border-box;
     float: left;
     width: 100%;
-      position: relative;
+    position: relative;
+    min-height: 1px;
     @for $i from 1 through $numCol {
       &.ip-col-#{$i} {
         width: 0%+(100%/$numCol)*$i;

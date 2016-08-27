@@ -17,6 +17,14 @@
             $('.js-nav').removeClass("jscss-active");
         }
     }
+    
+    function setHeightWorksLine() {
+        var height = 0;
+        $('.js-works').each(function() {
+            height += $(this).height();
+        });
+        $('.js-works-line').height(height - 20); //20px margin bottom
+    }
 
     function onScrollHandler(event) {
         toggleNav();
@@ -24,6 +32,7 @@
 
     function onResizeHandler(event) {
         toggleNav();
+        setHeightWorksLine();
     }
 
     $(document).ready(function () {
@@ -36,5 +45,6 @@
             thumbnail: false,
             selector: ".js-photo"
         });
+        setHeightWorksLine();
     });
 }());
