@@ -9,8 +9,8 @@ $ip-color1--dark: #27292e;
 $ip-color2: #607D8B;
 
 //red
-$ip-color3: #D32F2F;
-$ip-color3--dark: #B71C1C;
+$ip-color3: #90CAF9;
+$ip-color3--dark: #1976D2;
 
 
 //breakpoint da tenere allineati con le variabili js
@@ -74,15 +74,22 @@ body {
             text-decoration: none;
             padding: 20px;
             position: relative;
-            &--active {
+            margin: 0 5px;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 25px;
+                left: 0;
+                background: $ip-color3;
+                width: 100%;
+                height: 2px;
+                opacity: 0;
+                transition: 0.5s all;
+            }
+            &.jscss-nav__link--active, &:hover {
                 &:after {
-                    content: '';
-                    position: absolute;
+                    opacity: 1;
                     bottom: 15px;
-                    left: 0px;
-                    background: $ip-color3;
-                    width: 100%;
-                    height: 2px;
                 }
             }
         }
@@ -210,9 +217,9 @@ body {
                     position: absolute;
                     right: -9%;
                     top: 50%;
-                    height: 4px;
+                    height: 2px;
                     width: 9%;
-                    background: $ip-color3--dark;
+                    background: $ip-white;
                     content: "";
                 }
             }
@@ -222,9 +229,9 @@ body {
                     position: absolute;
                     left: -9%;
                     top: 50%;
-                    height: 4px;
+                    height: 2px;
                     width: 9%;
-                    background: $ip-color3--dark;
+                    background: $ip-white;
                     content: "";
                 }
             }
@@ -234,8 +241,8 @@ body {
             position: absolute;
             top: 0;
             left: 50%;
-            width: 4px;
-            background: $ip-color3--dark;
+            width: 2px;
+            background: $ip-white;
         }
         &__date {
             position: absolute;
@@ -252,10 +259,25 @@ body {
 
 @media screen and (max-width: $mobile) {
     .ip-container {
-        padding: 70px 0;
+        padding: 70px 0 0;
         text-align: center;
     }
-    .ip-photos__img {
-        
+    .ip-videos {
+        .ip-col:first-child {
+            margin-bottom: 10px;
+        }
+    }
+    .ip-works {
+        &__line {
+            display: none;
+        }
+        &__card {
+            &:last-child {
+                margin-top: 0;
+            }
+            &:after {
+                display: none;
+            }
+        }
     }
 }

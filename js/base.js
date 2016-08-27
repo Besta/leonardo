@@ -28,11 +28,24 @@
 
     function onScrollHandler(event) {
         toggleNav();
+        //TODO gestire nav allo scroll
     }
 
     function onResizeHandler(event) {
         toggleNav();
         setHeightWorksLine();
+    }
+    
+    function onClickNavHandler(event) {
+        var element = $("[data-menu="+$(this).data("menunav")+"]");
+        if (element.length > 0) {
+            var scrollTop = element.offset().top,
+                navHeight = $('.js-nav').height() + 60;
+        
+            $(".js-nav-link").removeClass("jscss-nav__link--active");
+            $("body").animate({"scrollTop" : scrollTop - navHeight}, 300);
+            $(this).addClass("jscss-nav__link--active");   
+        }
     }
 
     $(document).ready(function () {
@@ -40,6 +53,8 @@
             .on("scroll", onScrollHandler);
         $(window)
             .on("resize", onResizeHandler);
+        $('.js-nav-link').
+            on("click", onClickNavHandler)
 
         $("#lightgallery").lightGallery({
             thumbnail: false,
@@ -48,3 +63,7 @@
         setHeightWorksLine();
     });
 }());
+
+
+
+//easter egg se scrivi "leonario" succede qualcosa(ti manda all'armory di leo)
