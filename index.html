@@ -1,11 +1,10 @@
 <html>
     <head>        
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="plugins/lightGallery/src/css/lightgallery.css"/> 
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="plugins/lightGallery/src/css/lightgallery.css"/> 
         
-        <link rel="stylesheet" href="css/grid.css"/>
+        <link rel="stylesheet"  href="css/grid.css"/>
         <link rel="stylesheet" href="css/base.css"/>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -21,12 +20,12 @@
             <a href="javascript:void(0)" data-menunav="1" class="js-nav-link ip-nav__link jscss-nav__link--active">About</a>
             <a href="javascript:void(0)" data-menunav="2" class="js-nav-link ip-nav__link">Photo</a>
             <a href="javascript:void(0)" data-menunav="3" class="js-nav-link ip-nav__link">Video</a>
-            <a href="javascript:void(0)" data-menunav="4" class="js-nav-link ip-nav__link">Portfolio</a>
+            <a href="javascript:void(0)" data-menunav="4" class="js-nav-link ip-nav__link">Last Jobs</a>
             <a href="javascript:void(0)" data-menunav="5" class="js-nav-link ip-nav__link">Contact</a>
         </nav>
         <div class="ip-container">
             <!--div class="ip-container__background"></div-->
-            <div class="ip-row" data-menu="1">
+            <div class="ip-row js-nav-content" data-menu="1">
                 <div class="ip-col ip-col-24">
                     <div class="ip-container__card">
                         <div class="ip-profile">
@@ -83,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ip-row ip-row--gutters" data-menu="2">
+            <div class="ip-row ip-row--gutters js-nav-content" data-menu="2">
                 <div class="ip-col ip-col-24">
                     <div class="ip-container__card">
                         <h3 class="ip-section__title">Photos</h3>
@@ -126,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ip-row ip-row--gutters" data-menu="3">
+            <div class="ip-row ip-row--gutters js-nav-content" data-menu="3">
                <div class="ip-col ip-col-24">
                     <div class="ip-container__card">
                         <div class="ip-videos">
@@ -146,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ip-row ip-works"  data-menu="4">
+            <div class="ip-row ip-works js-nav-content"  data-menu="4">
                 <h3 class="ip-col ip-col-24 ip-section__title">Last Jobs</h3>
             </div>
             <div class="ip-row ip-works js-works">

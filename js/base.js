@@ -25,10 +25,27 @@
         });
         $('.js-works-line').height(height - 20); //20px margin bottom
     }
+    
+    function setActiveLink() {
+        var min = 99999999,
+            num = 0,
+            numActive = $('.js-nav__link.jscss-nav__link--active').data('menunav');
+        $('.js-nav-content').each(function() {
+            var val = Math.abs($(this).offset().top - ($("body").scrollTop() + 60));
+            if(val < min ) {
+                min = val;
+                num = $(this).data("menu");
+            }
+        });
+        if(num != numActive) {
+            $(".js-nav-link").removeClass("jscss-nav__link--active");
+            $(".js-nav-link[data-menunav=" + num + "]").addClass("jscss-nav__link--active");
+        }
+    }
 
     function onScrollHandler(event) {
         toggleNav();
-        //TODO gestire nav allo scroll
+        setActiveLink();
     }
 
     function onResizeHandler(event) {
