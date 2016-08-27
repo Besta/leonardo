@@ -258,9 +258,23 @@ body {
 }
 
 @media screen and (max-width: $mobile) {
+    .ip-nav {
+        padding: 0 5px;
+        &__link {
+            padding: 20px 5px;
+            margin: 0;
+            width: 20%;
+            display: inline-block;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    }
     .ip-container {
         padding: 70px 0 0;
         text-align: center;
+        &__card {
+            padding: 20px;
+        }
     }
     .ip-videos {
         .ip-col:first-child {
