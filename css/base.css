@@ -181,26 +181,27 @@ body {
 .ip-photos__img {
   display: inline-block;
   width: auto;
-  max-height: 300px; }
-  /* line 197, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  max-height: 300px;
+  max-width: 100%; }
+  /* line 198, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-photos__img--h {
     max-height: 140px; }
 
-/* line 202, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 203, C:/Users/Simone/Desktop/leonardo/css/base.scss */
 .ip-videos {
   text-align: center; }
-  /* line 204, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 205, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-videos__row {
     position: relative;
     margin-bottom: 20px; }
-    /* line 207, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+    /* line 208, C:/Users/Simone/Desktop/leonardo/css/base.scss */
     .ip-videos__row:last-child {
       margin: 0; }
-  /* line 211, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 212, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-videos__placeholder {
     width: 100%;
     visibility: hidden; }
-  /* line 215, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 216, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-videos__video {
     position: absolute;
     top: 0;
@@ -208,7 +209,7 @@ body {
     width: 100%;
     height: 100%; }
 
-/* line 226, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 227, C:/Users/Simone/Desktop/leonardo/css/base.scss */
 .ip-works__card:first-child:after {
   position: absolute;
   right: -9%;
@@ -218,10 +219,10 @@ body {
   background: white;
   content: ""; }
 
-/* line 236, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 237, C:/Users/Simone/Desktop/leonardo/css/base.scss */
 .ip-works__card:last-child {
   margin-top: 50px; }
-  /* line 238, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 239, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-works__card:last-child:after {
     position: absolute;
     left: -9%;
@@ -231,7 +232,7 @@ body {
     background: white;
     content: ""; }
 
-/* line 249, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 250, C:/Users/Simone/Desktop/leonardo/css/base.scss */
 .ip-works__line {
   content: '';
   position: absolute;
@@ -240,7 +241,7 @@ body {
   width: 2px;
   background: white; }
 
-/* line 257, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 258, C:/Users/Simone/Desktop/leonardo/css/base.scss */
 .ip-works__date {
   position: absolute;
   top: 16px;
@@ -250,15 +251,15 @@ body {
   transform: rotate(-45deg);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.87); }
 
-/* line 267, C:/Users/Simone/Desktop/leonardo/css/base.scss */
-.ip-works {
+/* line 268, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+.ip-works--withMargin {
   margin-top: 20px; }
 
 @media screen and (max-width: 736px) {
-  /* line 274, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 275, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-nav {
     padding: 0 5px; }
-    /* line 276, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+    /* line 277, C:/Users/Simone/Desktop/leonardo/css/base.scss */
     .ip-nav__link {
       padding: 20px 5px;
       margin: 0;
@@ -266,23 +267,23 @@ body {
       display: inline-block;
       box-sizing: border-box;
       text-align: center; }
-  /* line 285, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 286, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-container {
     padding: 70px 0 0;
     text-align: center; }
-    /* line 288, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+    /* line 289, C:/Users/Simone/Desktop/leonardo/css/base.scss */
     .ip-container__card {
       padding: 20px; }
-  /* line 293, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 294, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-videos .ip-col:first-child {
     margin-bottom: 10px; }
-  /* line 298, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 299, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-works__line {
     display: none; }
-  /* line 302, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 303, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-works__card:last-child {
     margin-top: 0; }
-  /* line 305, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 306, C:/Users/Simone/Desktop/leonardo/css/base.scss */
   .ip-works__card:after {
     display: none; } }
 
