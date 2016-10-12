@@ -262,8 +262,8 @@ body {
     /* line 277, C:/Users/Simone/Desktop/leonardo/css/base.scss */
     .ip-nav__link {
       padding: 20px 5px;
-      margin: 0;
-      width: 20%;
+      margin: 0 1%;
+      width: 23%;
       display: inline-block;
       box-sizing: border-box;
       text-align: center; }
