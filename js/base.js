@@ -64,7 +64,18 @@
             $(this).addClass("jscss-nav__link--active");   
         }
     }
+    
+    function onClickThumbs(event) {
+        $(".js-image").attr("src", $(this).data("src"));
+    }
 
+    function onClickArrow(event) {
+        var scroll = $(this).data("scroll");
+        $(".js-gallery").animate({
+          "scrollLeft" :  $(".js-gallery").scrollLeft() + scroll
+        }, 200);
+    }
+    
     $(document).ready(function () {
         $(document)
             .on("scroll", onScrollHandler);
@@ -72,6 +83,10 @@
             .on("resize", onResizeHandler);
         $('.js-nav-link').
             on("click", onClickNavHandler)
+        $('.js-thumb').
+            on("click", onClickThumbs);
+        $('.js-navigation').
+            on("click", onClickArrow);
 
         $("#lightgallery").lightGallery({
             thumbnail: false,

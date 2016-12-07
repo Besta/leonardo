@@ -1,17 +1,20 @@
-/* line 20, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 20, /Users/athirat28/mie/leonardo/css/base.scss */
 h1, h2, h3, p {
   margin: 0;
   padding: 0; }
 
-/* line 25, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 25, /Users/athirat28/mie/leonardo/css/base.scss */
 body {
   background: #27292e;
   margin: 0;
   font-size: 0;
   padding: 0 20px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-/* line 33, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 36, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-background {
   background-image: url("../img/sfondo.jpg");
   height: 100%;
@@ -27,7 +30,7 @@ body {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px); }
-  /* line 48, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 51, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-background:after {
     content: "";
     position: absolute;
@@ -37,8 +40,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0.5; }
-
-/* line 59, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 62, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-nav {
   padding: 20px;
   text-align: right;
@@ -50,7 +52,7 @@ body {
   z-index: 1;
   transition: 0.5s all;
   border-radius: 0 0 3px 3px; }
-  /* line 70, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 73, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-nav__link {
     font-size: 15px;
     color: white;
@@ -59,7 +61,7 @@ body {
     padding: 20px;
     position: relative;
     margin: 0 5px; }
-    /* line 78, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+    /* line 81, /Users/athirat28/mie/leonardo/css/base.scss */
     .ip-nav__link:after {
       content: '';
       position: absolute;
@@ -70,22 +72,21 @@ body {
       height: 2px;
       opacity: 0;
       transition: 0.5s all; }
-    /* line 90, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+    /* line 93, /Users/athirat28/mie/leonardo/css/base.scss */
     .ip-nav__link.jscss-nav__link--active:after, .ip-nav__link:hover:after {
       opacity: 1;
       bottom: 15px; }
-  /* line 96, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 99, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-nav.jscss-active {
     background: #35363b;
     box-shadow: 1px -2px 10px #1976D2;
     box-shadow: 0 2px 2px 0 rgba(25, 118, 210, 0.34), 0 3px 1px -2px rgba(25, 118, 210, 0.4), 0 1px 5px 0 rgba(25, 118, 210, 0.32); }
-
-/* line 102, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 105, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-container {
   padding-top: 150px;
   max-width: 1024px;
   margin: auto; }
-  /* line 106, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 109, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-container__background {
     background-image: url("../img/sfondo.jpg");
     height: 100%;
@@ -100,7 +101,7 @@ body {
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px); }
-    /* line 120, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+    /* line 123, /Users/athirat28/mie/leonardo/css/base.scss */
     .ip-container__background:after {
       content: "";
       position: absolute;
@@ -110,7 +111,7 @@ body {
       width: 100%;
       height: 100%;
       opacity: 0.5; }
-  /* line 131, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 134, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-container__card {
     width: 100%;
     background: #35363b;
@@ -118,98 +119,115 @@ body {
     font-size: 15px;
     margin: auto;
     position: relative;
-    padding: 40px;
+    padding: 30px;
     box-sizing: border-box;
     border-radius: 3px;
     box-shadow: 0 2px 2px 0 rgba(1, 1, 1, 0.14), 0 3px 1px -2px rgba(1, 1, 1, 0.2), 0 1px 5px 0 rgba(1, 1, 1, 0.12);
     margin-bottom: 30px;
     overflow: hidden; }
-
-/* line 147, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+    /* line 147, /Users/athirat28/mie/leonardo/css/base.scss */
+    .ip-container__card--padding {
+      padding: 30px 0; }
+/* line 153, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-profile__image {
   max-width: 100%;
   max-height: 350px;
   padding-right: 20px;
   box-sizing: border-box; }
-
-/* line 153, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 158, /Users/athirat28/mie/leonardo/css/base.scss */
+  .ip-profile__imageCol {
+    text-align: center; }
+/* line 162, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-profile__title {
   font-size: 28px;
   font-weight: 500;
   margin-top: 40px;
   margin-bottom: 10px; }
-
-/* line 159, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 168, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-profile__subtitle {
   font-size: 22px;
   font-weight: 300;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-
-/* line 165, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 174, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-profile__infoRow {
   margin: 20px 0; }
-
-/* line 168, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 177, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-profile__question {
   color: #90CAF9;
   text-transform: uppercase;
   font-weight: 500; }
-
-/* line 174, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 183, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-section__title {
   font-size: 25px;
   text-align: center;
   color: #90CAF9;
   margin-bottom: 15px;
   font-weight: 400; }
-
-/* line 182, C:/Users/Simone/Desktop/leonardo/css/base.scss */
-.ip-photos__row {
-  margin-bottom: 10px; }
-
-/* line 185, C:/Users/Simone/Desktop/leonardo/css/base.scss */
-.ip-photos__photo {
-  text-decoration: none;
+/* line 191, /Users/athirat28/mie/leonardo/css/base.scss */
+.ip-photos__image {
   text-align: center;
-  display: block; }
-  /* line 189, C:/Users/Simone/Desktop/leonardo/css/base.scss */
-  .ip-photos__photo:nth-child(2) {
-    margin-top: 20px; }
-
-/* line 193, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  margin-bottom: 20px; }
+/* line 195, /Users/athirat28/mie/leonardo/css/base.scss */
+.ip-photos__row {
+  overflow-x: auto; }
+/* line 198, /Users/athirat28/mie/leonardo/css/base.scss */
+.ip-photos__container {
+  white-space: nowrap; }
+/* line 201, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-photos__img {
   display: inline-block;
   width: auto;
-  max-height: 300px;
-  max-width: 100%; }
-  /* line 198, C:/Users/Simone/Desktop/leonardo/css/base.scss */
-  .ip-photos__img--h {
-    max-height: 140px; }
-
-/* line 203, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  height: 150px;
+  max-width: 100%;
+  cursor: pointer;
+  margin: 0 5px; }
+  /* line 208, /Users/athirat28/mie/leonardo/css/base.scss */
+  .ip-photos__img--big {
+    max-height: 500px; }
+/* line 212, /Users/athirat28/mie/leonardo/css/base.scss */
+.ip-photos__navigation {
+  position: absolute;
+  top: 0;
+  background: #90CAF9;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  padding: 7px;
+  box-sizing: border-box;
+  top: calc(50% - 20px);
+  cursor: pointer; }
+  /* line 226, /Users/athirat28/mie/leonardo/css/base.scss */
+  .ip-photos__navigation--left {
+    left: 20px; }
+  /* line 229, /Users/athirat28/mie/leonardo/css/base.scss */
+  .ip-photos__navigation--right {
+    right: 20px; }
+/* line 234, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-videos {
   text-align: center; }
-  /* line 205, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 236, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-videos__row {
     position: relative;
     margin-bottom: 20px; }
-    /* line 208, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+    /* line 239, /Users/athirat28/mie/leonardo/css/base.scss */
     .ip-videos__row:last-child {
       margin: 0; }
-  /* line 212, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 243, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-videos__placeholder {
     width: 100%;
     visibility: hidden; }
-  /* line 216, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 247, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-videos__video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
-
-/* line 227, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 258, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-works__card:first-child:after {
   position: absolute;
   right: -9%;
@@ -218,11 +236,10 @@ body {
   width: 9%;
   background: white;
   content: ""; }
-
-/* line 237, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 268, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-works__card:last-child {
   margin-top: 50px; }
-  /* line 239, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 270, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-works__card:last-child:after {
     position: absolute;
     left: -9%;
@@ -231,8 +248,7 @@ body {
     width: 9%;
     background: white;
     content: ""; }
-
-/* line 250, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 281, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-works__line {
   content: '';
   position: absolute;
@@ -240,8 +256,7 @@ body {
   left: 50%;
   width: 2px;
   background: white; }
-
-/* line 258, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 289, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-works__date {
   position: absolute;
   top: 16px;
@@ -250,16 +265,19 @@ body {
   background: #1976D2;
   transform: rotate(-45deg);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.87); }
-
-/* line 268, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+/* line 299, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-works--withMargin {
   margin-top: 20px; }
 
+/* line 305, /Users/athirat28/mie/leonardo/css/base.scss */
+.ip-padding-0-75 {
+  padding: 0 75px; }
+
 @media screen and (max-width: 736px) {
-  /* line 275, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 310, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-nav {
     padding: 0 5px; }
-    /* line 277, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+    /* line 312, /Users/athirat28/mie/leonardo/css/base.scss */
     .ip-nav__link {
       padding: 20px 5px;
       margin: 0 1%;
@@ -267,23 +285,23 @@ body {
       display: inline-block;
       box-sizing: border-box;
       text-align: center; }
-  /* line 286, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 321, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-container {
     padding: 70px 0 0;
     text-align: center; }
-    /* line 289, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+    /* line 324, /Users/athirat28/mie/leonardo/css/base.scss */
     .ip-container__card {
       padding: 20px; }
-  /* line 294, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 329, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-videos .ip-col:first-child {
     margin-bottom: 10px; }
-  /* line 299, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 334, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-works__line {
     display: none; }
-  /* line 303, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 338, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-works__card:last-child {
     margin-top: 0; }
-  /* line 306, C:/Users/Simone/Desktop/leonardo/css/base.scss */
+  /* line 341, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-works__card:after {
     display: none; } }
 
