@@ -265,19 +265,30 @@ body {
   background: #1976D2;
   transform: rotate(-45deg);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.87); }
-/* line 299, /Users/athirat28/mie/leonardo/css/base.scss */
+/* line 298, /Users/athirat28/mie/leonardo/css/base.scss */
+.ip-works__type {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #90CAF9;
+  font-weight: 400; }
+/* line 305, /Users/athirat28/mie/leonardo/css/base.scss */
+.ip-works__question {
+  color: #90CAF9;
+  font-weight: 400; }
+/* line 310, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-works--withMargin {
   margin-top: 20px; }
 
-/* line 305, /Users/athirat28/mie/leonardo/css/base.scss */
+/* line 316, /Users/athirat28/mie/leonardo/css/base.scss */
 .ip-padding-0-75 {
   padding: 0 75px; }
 
 @media screen and (max-width: 736px) {
-  /* line 310, /Users/athirat28/mie/leonardo/css/base.scss */
+  /* line 321, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-nav {
     padding: 0 5px; }
-    /* line 312, /Users/athirat28/mie/leonardo/css/base.scss */
+    /* line 323, /Users/athirat28/mie/leonardo/css/base.scss */
     .ip-nav__link {
       padding: 20px 5px;
       margin: 0 1%;
@@ -285,23 +296,23 @@ body {
       display: inline-block;
       box-sizing: border-box;
       text-align: center; }
-  /* line 321, /Users/athirat28/mie/leonardo/css/base.scss */
+  /* line 332, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-container {
     padding: 70px 0 0;
     text-align: center; }
-    /* line 324, /Users/athirat28/mie/leonardo/css/base.scss */
+    /* line 335, /Users/athirat28/mie/leonardo/css/base.scss */
     .ip-container__card {
       padding: 20px; }
-  /* line 329, /Users/athirat28/mie/leonardo/css/base.scss */
+  /* line 340, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-videos .ip-col:first-child {
     margin-bottom: 10px; }
-  /* line 334, /Users/athirat28/mie/leonardo/css/base.scss */
+  /* line 345, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-works__line {
     display: none; }
-  /* line 338, /Users/athirat28/mie/leonardo/css/base.scss */
+  /* line 349, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-works__card:last-child {
     margin-top: 0; }
-  /* line 341, /Users/athirat28/mie/leonardo/css/base.scss */
+  /* line 352, /Users/athirat28/mie/leonardo/css/base.scss */
   .ip-works__card:after {
     display: none; } }
 
