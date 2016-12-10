@@ -368,7 +368,7 @@ body {
     width: 100%;
     background: rgba(53, 54, 59, 0.95);
     z-index: 3;
-    padding: 100px 0px 0;
+    padding: 60px 20px 20px;
     box-sizing: border-box;
   }
   .ip-photos__image--active {
@@ -381,7 +381,7 @@ body {
   .ip-photos__close {
     display: block;
     position: absolute;
-    top: -85px;
+    top: -45px;
     right: 0px;
     font-size: 30px;
     cursor: pointer;
