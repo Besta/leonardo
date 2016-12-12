@@ -31,6 +31,8 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    max-width: 1024px;
+    margin: auto;
 }
 .ip {
     &-background {
@@ -300,8 +302,8 @@ body {
         }
         &__date {
             position: absolute;
-            top: 16px;
-            left: -21px;
+            top: 14px;
+            left: -22px;
             padding: 1px 30px;
             background: $ip-color3--dark;
             transform: rotate(-45deg);
