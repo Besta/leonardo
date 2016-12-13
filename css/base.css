@@ -136,10 +136,6 @@ body {
   overflow: hidden;
 }
 
-.ip-container__card--padding {
-  padding: 30px 0;
-}
-
 .ip-profile__image {
   max-width: 100%;
   max-height: 350px;
@@ -230,7 +226,6 @@ body {
 
 .ip-photos__navigation {
   position: absolute;
-  top: 0;
   background: #90CAF9;
   color: white;
   text-align: center;
@@ -240,17 +235,17 @@ body {
   border-radius: 100%;
   line-height: 40px;
   box-sizing: border-box;
-  top: calc(50% - 20px);
+  bottom: 105px;
   cursor: pointer;
   z-index: 1;
 }
 
 .ip-photos__navigation--left {
-  left: 20px;
+  left: 50px;
 }
 
 .ip-photos__navigation--right {
-  right: 20px;
+  right: 50px;
 }
 
 .ip-videos {
@@ -405,6 +400,7 @@ body {
     width: 30px;
     height: 30px;
     line-height: 30px;
+    bottom: 50%;
   }
   .ip-videos .ip-col:first-child {
     margin-bottom: 10px;
